@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de">
+<head>
+<title>alpbachschlucht.ch - {{ page.title }}</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/default.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/nav.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="assets/css/album.css" />
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16833668-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+  <ul id="nav">
+    {% for item in site.data.nav %}
+    <li>
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="currentpage"{% endif %}>
+	{{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+
+    <li class="nobullet">
+      <a href="http://www.sac-oberhasli.ch/">
+	<img src="assets/images/icon/sac.gif" alt="SAC-Oberhasli" />
+	<br />SAC-Oberhasli
+      </a>
+    </li>
+  </ul>
+
+  <h1>
+    <img src="assets/images/icon/signet.png" width="120" height="170" alt="Albachschlucht"
+	 style="vertical-align:middle; border: none;" /> {{ page.title }}
+  </h1>
+  
+  <div id="content">
+    {{ content }}
+  </div>
+</body>
+</html>

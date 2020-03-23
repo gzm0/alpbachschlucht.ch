@@ -1,0 +1,72 @@
+ul#nav {
+        padding: 0px;
+	float: left;
+	width: 200px;
+	margin: 0px;
+}
+
+ul#nav ul {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+
+ul#nav li {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+ul#nav li a {
+	vertical-align:top;
+	font-family:Arial;
+	font-size:14pt;
+	text-decoration:none;
+	color:#000000;
+	padding: 2px 0px 2px 32px;
+	margin: 0px;
+	display: block;
+	height: 34px;
+	background: url(../images/icon/bullet.png) no-repeat;
+}
+
+/* Border Box correction */
+* html ul#nav li a {
+        height: 38px;
+}
+  	 
+
+ul#nav li li a {
+	background: none;
+	padding: 1px 0px 4px 35px;
+	height: auto;
+	font-size: 12pt;
+}
+
+/* Correction of non-interpretation of height: auto; */
+ul#nav li li a {
+        height: 17px;
+}
+
+ul#nav li a:hover {
+	color: #F26224;
+	background: url(../images/icon/bullet_hov.png) no-repeat;
+}
+
+ul#nav li li a:hover {
+	color: #F26224;
+	background: none;
+}
+
+ul#nav li.nobullet {
+	list-style-type: none;
+	list-style-image: none;
+	font-size: 7pt;
+	margin-top: 25px;
+}
+
+ul#nav li.nobullet a {
+	color: #000000;
+	font-size: 7pt;
+	background: none;
+}
