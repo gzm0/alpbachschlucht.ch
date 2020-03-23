@@ -10,5 +10,6 @@
 #Verein
 #Geschichte
 #Kontakt
-#Links
 
+- name: Links
+  link: /links.html
